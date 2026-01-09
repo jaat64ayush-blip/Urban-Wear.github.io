@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>UrbanWear Product</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto;
+  background: #fff;
+  color: #111;
+}
+
+/* Product Image */
+.product-img img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Product Info */
+.product-info {
+  padding: 15px;
+}
+
+.brand {
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.title {
+  color: #555;
+  margin: 5px 0 10px;
+}
+
+.price {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.old-price {
+  text-decoration: line-through;
+  color: #888;
+  margin-left: 8px;
+  font-weight: 400;
+}
+
+.discount {
+  color: #ff3f6c;
+  margin-left: 8px;
+  font-weight: 600;
+}
+
+/* Size Section */
+.size-title {
+  margin: 20px 0 10px;
+  font-weight: 600;
+}
+
+.sizes {
+  display: flex;
+  gap: 10px;
+}
+
+.size {
+  border: 1px solid #ccc;
+  padding: 10px 14px;
+  border-radius: 50%;
+  font-size: 14px;
+}
+
+/* Bottom Bar */
+.bottom-bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #fff;
+  display: flex;
+  border-top: 1px solid #ddd;
+}
+
+.wishlist {
+  width: 40%;
+  text-align: center;
+  padding: 15px;
+  border-right: 1px solid #ddd;
+  font-weight: 600;
+}
+
+.shop {
+  width: 60%;
+  background: #ff3f6c;
+  text-align: center;
+  padding: 15px;
+}
+
+.shop a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 16px;
+}
+</style>
+</head>
+
+<body>
+
+<!-- Image -->
+<div class="product-img">
+  <img src="product.jpg" alt="T-shirt">
+</div>
+
+<!-- Info -->
+<div class="product-info">
+  <div class="brand">UrbanWear</div>
+  <div class="title">Men Premium Cotton Polo T-Shirt</div>
+
+  <div class="price">
+    ₹499
+    <span class="old-price">₹999</span>
+    <span class="discount">50% OFF</span>
+  </div>
+
+  <div class="size-title">SELECT SIZE</div>
+  <div class="sizes">
+    <div class="size">S</div>
+    <div class="size">M</div>
+    <div class="size">L</div>
+    <div class="size">XL</div>
+  </div>
+</div>
+
+<!-- Bottom Bar -->
+<div class="bottom-bar">
+  <div class="wishlist">WISHLIST</div>
+  <div class="shop">
+    <a href="https://jaat64ayush-blip.github.io">SHOP NOW</a>
+  </div>
+</div>
+
+</body>
+</html>
