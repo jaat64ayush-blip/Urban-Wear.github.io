@@ -1,0 +1,20 @@
+let cart=JSON.parse(localStorage.getItem("cart"))||[];
+
+function addToCart(n,p){
+cart.push({n,p});
+localStorage.setItem("cart",JSON.stringify(cart));
+alert("Added to cart");
+}
+
+function loadCart(){
+let c=JSON.parse(localStorage.getItem("cart"))||[];
+let t=0;
+cart.innerHTML=c.map(i=>{t+=i.p;return `<p>${i.n} - ₹${i.p}</p>`}).join("")+`<h3>Total ₹${t}</h3>`;
+}
+
+function orderWhatsApp(){
+let c=JSON.parse(localStorage.getItem("cart"))||[];
+let msg="UrbanWear Order:%0A";
+c.forEach(i=>msg+=`${i.n} - ₹${i.p}%0A`);
+window.open("https://wa.me/916375263557?text="+msg);
+}
